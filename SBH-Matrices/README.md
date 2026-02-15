@@ -7,7 +7,7 @@ Each file containing S-Hadamard BH matrices is named `SBH-n-q-mpl.txt` where the
 The file is given in a Maple-readable format containing a list called `Evals` containing the matrices given in integer form.
 For example, the `SBH-6-3-mpl.txt` file contains the following:
 
-```{txt}
+```txt
 Evals := [
 [[0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 2, 2], [0, 1, 0, 2, 1, 2], [0, 1, 2, 0, 2, 1], [0, 2, 1, 2, 0, 1], [0, 2, 2, 1, 1, 0]]
 ];
@@ -15,7 +15,7 @@ Evals := [
 
 In Maple, the integer form of the $BH(6,3)$ matrix can be formed as follows:
 
-```{mpl}
+```m
 with(LinearAlgebra):
 
 read "SBH-6-3-mpl.txt":
