@@ -6,7 +6,7 @@ Note that all files contain Maple objects, not plain text, hence the file must b
 
 The contents of the files can be read as follows in Maple:
 
-```m
+```sh
 read "sbh-12-6-defects.m":
 
 for i from 1 to nops(sq_defects) do

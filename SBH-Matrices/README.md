@@ -15,7 +15,7 @@ Evals := [
 
 In Maple, the integer form of the $BH(6,3)$ matrix can be formed as follows:
 
-```m
+```sh
 with(LinearAlgebra):
 
 read "SBH-6-3-mpl.txt":

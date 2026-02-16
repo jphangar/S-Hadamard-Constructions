@@ -9,6 +9,9 @@ modOmega := proc(H::Matrix)
     algsubs(w^3=1, algsubs(1/w=w^2, H));
 end:
 
+modW := proc(expr::algebraic)
+    algsubs(w^3=1, algsubs(1/w=w^2, expr));
+end:
 
 normalizeMat := proc(H::Matrix, n::integer)
 local M, i;
@@ -26,8 +29,8 @@ end:
 checkSHadConditions := proc(H::Matrix)
 local i, j, ips, sips, ip, sip;
 global n;
-    ip := (x,y) -> numer(normal(rem(modOmega(add( x[i]/y[i] , i=1..n), w), 1+w+w^2, w))):
-    sip := (x,y) -> numer(normal(rem(modOmega(add( x[i]^2/y[i]^2 , i=1..n), w), 1+w+w^2, w))):
+    ip := (x,y) -> numer(normal(rem(modW(add( x[i]/y[i] , i=1..n), w), 1+w+w^2, w))):
+    sip := (x,y) -> numer(normal(rem(modW(add( x[i]^2/y[i]^2 , i=1..n), w), 1+w+w^2, w))):
     ips := { seq( seq( ip(H[i],H[j]), j=i+1..n), i=1..n) };
     sips := { seq( seq( sip(H[i],H[j]), j=i+1..n), i=1..n) };
     return( ips={0} and sips={0} );
