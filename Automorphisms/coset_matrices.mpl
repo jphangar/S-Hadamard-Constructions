@@ -6,9 +6,7 @@ with(combinat):
 
 read "H12_automorphisms.txt":
 read "matrix_constructions.mpl":
-read "../Block-Structure/utils.mpl":
 read "Habc.m":
-read "../Block-Structure/H12.m":
 
 
 # Function for determining if matrix is in the list of matrices

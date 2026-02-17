@@ -6,7 +6,6 @@ with(combinat):
 
 read "H12_automorphisms.txt":
 read "matrix_constructions.mpl":
-read "../Block-Structure/utils.mpl":
 
 
 # Function for determining if two matrices are equivalent using automorphisms of H12
