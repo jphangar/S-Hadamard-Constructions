@@ -2,6 +2,8 @@
 
 This directory contains code for alternate methods for parametrizing we attempted described in Section 5.4 of the thesis.
 
+## Circulant S-Hadamard Matrices
+
 `circulant_matrices.mpl` is the script used to generate the results given in Section 5.4.1 for checking if we can introduce one parameter to a circulant version of $H_{12}^*$ given by de Launey (1992).
 The output of the script shows that only trivial parametrizations (either adding no parameters or multiplying both generating vectors by the parameter) produce S-Hadamard parametrizations of the matrix:
 
@@ -13,6 +15,8 @@ Found parameterization: [a, a, a, a, a, a], [a, a, a, a, a, a]
 FAIL COUNT: 4094
 SUCCESS COUNT: 2
 ```
+
+## Solving for Parameter Blocks
 
 `solving_parameter_blks.mpl` is the script used to check if the $BH(12,3)$ matrices given in the Aalto repository have a block-structured parametrization in Section 5.4.2.
 The script prints permutation blocks that lead to a valid parametrization and indicates if the parametrization is trivial.
@@ -39,6 +43,8 @@ Permutation block: Matrix(4, 4, [[0,0,1,0],[0,0,0,1],[1,0,0,0],[0,1,0,0]]), Vali
 Permutation block: Matrix(4, 4, [[0,0,1,0],[0,0,0,1],[0,1,0,0],[1,0,0,0]]), Valid solution count: 1, Trivial: true
 > 
 ```
+
+## SLA-Parametrization
 
 `sla_parametrization.mpl` is the script used in Section 5.4.3 to find S-Hadamard SLA-parametrizations of the $BH(12,3)$ matrices given in the Aalto repository.
 We use the basis of the kernel given in `sbh-12-3-defects.m` for both matrices as this basis will give the results shown in the thesis.
@@ -116,3 +122,7 @@ Idx 3, variable {r[10,12], r[11,9]} is an S-Hadamard SLA-parameterization
 Idx 3, variable {r[8,11], r[10,12], r[11,9]} is an S-Hadamard SLA-parameterization
 > 
 ```
+
+## Row-Wise Parametrization Using Backtracking
+
+For the backtracking method described in Section 5.4.4 of the thesis, see directory `Backtracking-Method` for details.
