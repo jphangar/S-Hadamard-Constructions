@@ -24,6 +24,11 @@ Note that this code in this repository has the following software version requir
   - [Section 3.4: Order 12 S-Hadamard parametrized matrices](#section-34-order-12-s-hadamard-parametrized-matrices)
 - [Section 4: Identifying Butson Hadamard matrices](#section-4-identifying-butson-hadamard-matrices)
 - [Section 5: Analysis of parametrized matrices](#section-5-analysis-of-parametrized-matrices)
+  - [Section 5.1: Block-structured representation of matrices](#section-51-block-structured-representation-of-matrices)
+  - [Section 5.2: Algebraic block parametrization](#section-52-algebraic-block-parametrization)
+  - [Section 5.3: Automorphisms and equivalence](#section-53-automorphisms-and-equivalence)
+  - [Section 5.4: Haagerup invariant](#section-54-haagerup-invariant)
+  - [Section 5.5: Alternate parametrization methods](#section-55-alternate-parametrization-methods)
 
 ## Section 1: Relevant links and sources
 
@@ -92,3 +97,45 @@ We include the code that we used in this section in [BH-Equivalence](BH-Equivale
 ## Section 5: Analysis of parametrized matrices
 
 This section describes references in "Chapter 5: Analysis of Parametrized Order 12 S-Hadamard Matrices" of the thesis.
+
+Note that we do not provide any code for checking equivalence of complex Hadamard equivalence, i.e., code used for determining $H(a,b,c) \not\sim H(a^{1}, b^{-1}, c^{-1})$ for $a = \zeta_7$, $b = \zeta_5$, and $c= \zeta_{11}$ in Section 5.3.2 of the thesis.
+This result is relatively straightforward to produce using the C package by Östergård and Valtonen.
+However, there package is not publicly available yet so we are not including any files pertaining to their package or our usage of it.
+
+### Section 5.1: Block-structured representation of matrices
+
+All code for finding a block-structured representation of each 3-parameter order 12 matrix found numerically as described in Section 5.1 of the thesis is given in the [Block-Structure](Block-Structure/) directory.
+See this directory for more specific details.
+The relevant data files referenced in the thesis are linked below.
+
+- The parameter matrices $M_t$ we obtained are available in [parameter_matrices.m](Block-Structure/parameter_matrices.m).
+- The parameter and permutation blocks we obtained for each parametrized matrix are available in [perm_and_parameter_blocks.m](Block-Structure/perm_and_parameter_blocks.m).
+
+### Section 5.2: Algebraic block parametrization
+
+All code related to Section 5.2 of the thesis that is made available is contained in the [Algebraic-Blocks](Algebraic-Blocks/) directory.
+See this directory for more details.
+Note that this section is not referred to in the thesis, but we include our calculations for completeness.
+
+### Section 5.3: Automorphisms and equivalence
+
+All code for determining equivalences and automorphisms described in Section 5.3 of the thesis is available in the [Automorphisms](Automorphisms/) directory.
+See this directory for more details.
+Note that this section is not referred to in the thesis, but we include our calculations for completeness.
+
+### Section 5.4: Haagerup invariant
+
+All code for computing the Haagerup invariant of parametrized matrices and variants described in Section 5.3 of the thesis is available in the [Haagerup-Invariant](Haagerup-Invariant/) directory.
+See this directory for more details.
+Note that this section is not referred to in the thesis, but we include our calculations for completeness.
+
+### Section 5.5: Alternate parametrization methods
+
+All code for obtaining parametrization methods and results discussed in Section 5.4 of the thesis is available in the [Alternate-Methods](Alternate-Methods/) directory.
+See this directory for more details regarding usage and results.
+We link the relevant source files below for each method discussed in the section.
+
+- The Maple code for checking if a circulant $BH(12,3)$ matrix can be parametrized described in Section 5.4.1 is available in [circulant_matrices.mpl](Alternate-Methods/circulant_matrices.mpl).
+- The Maple code for solving for parameter blocks of an unstructured $BH(12,3)$ matrix described in Section 5.4.2 is available in [solving_parameter_blks.mpl](Alternate-Methods/solving_parameter_blks.mpl).
+- The Maple code for finding SLA-parametrizations that are S-Hadamard for $BH(12,3)$ matrices described in Section 5.4.3 is available in [sla_parametrization.mpl](Alternate-Methods/sla_parametrization.mpl).
+- The implementation of Algorithm 2 given in Section 5.4.4 is contained in [Backtracking-Method](Alternate-Methods/Backtracking-Method/), with usage and examples given in the associated [README.md](Alternate-Methods/Backtracking-Method/README.md).
