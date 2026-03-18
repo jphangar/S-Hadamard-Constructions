@@ -13,7 +13,7 @@ The isomorphism usage is as follows in Maple:
 read "isomorphisms.txt": # Three objects, CT_mats, P_mats and Q_mats
 
 for i from 1 to nops(P_mats) do
-    evalb( i in CT_mats ); # True if all omega-evaluations of i-th parametrized matrix equivalent to H12 conjugate transpose
+    evalb( i in CT_mats ); # True if all omega-evaluations of i-th parametrized matrix are equivalent to H12 conjugate transpose
     # if parametrized matrix index is in CT_mats, TAKE THE CONJUGATE TRANSPOSE of the parametrized matrix before applying isomorphism
 
     P[i] := Matrix(P_mats[i]); # Monomial matrix acting on rows 

@@ -1,11 +1,11 @@
 # Constructions of S-Hadamard Matrices
 
-This repository contains source code and data for my Master's thesis titled "Constructions of S-Hadamard Matrices".
+This repository contains source code and data for my Master's thesis titled _Constructions of S-Hadamard Matrices_.
 Citations in my thesis for this repository include a section number to specify the data and files being referred to.
 The section numbers cited are given below.
 For each section, we describe where the relevant data and files can be found in the repository.
 
-Note that this code in this repository has the following software version requirements:
+Note that the code in this repository has the following software version requirements:
 
 - Maple 2024 minimum required
 - Magma V2.26-12
@@ -34,21 +34,21 @@ Note that this code in this repository has the following software version requir
 
 This section is not referred to in the thesis, but included for quick links to relevant sources:
 
-- Aalto BH Matrix Repository: <https://wiki.aalto.fi/spaces/Butson/pages/120482304/Matrices+up+to+monomial+equivalence>
+- Aalto BH matrix repository: <https://wiki.aalto.fi/spaces/Butson/pages/120482304/Matrices+up+to+monomial+equivalence>
 - Catalog of CHM: <https://chaos.if.uj.edu.pl/~karol/hadamard/>
-- Defect of BH (for matrices in Aalto repository): <https://chaos.if.uj.edu.pl/~wojtek/CHM_BH_0/index.html#BH-defect>
+- Defect of BH matrix (for matrices in Aalto repository): <https://chaos.if.uj.edu.pl/~wojtek/CHM_BH_0/index.html#BH-defect>
 - Source code for BH equivalence algorithm: <https://www.daneflannery.com/classifying-cocyclic-butson-hadamard-matrices>
 
 ## Section 2: Butson type S-Hadamard matrices
 
-This section describes references in "Chapter 2: Background" of the thesis, particularly, "Section 2.6: Butson Hadamard Matrices".
+This section describes references in _Chapter 2: Background_ of the thesis, particularly, _Section 2.6: Butson Hadamard Matrices_.
 Note that examples of Butson Hadamard matrices used throughout this thesis are taken from the [Aalto repository](https://wiki.aalto.fi/spaces/Butson/pages/120482304/Matrices+up+to+monomial+equivalence).
 
 ### Section 2.1: Catalog of S-Hadamard BH matrices
 
 The specific BH matrices that we use for square defect computations in Section 2.6.2 are given in the [SBH-Matrices](SBH-Matrices/) directory.
 See this directory for more details.
-Notably, the position of each $BH(n,q)$ matrix in our data file containing a list of BH(n,q)$ matrices is what we refer to as the index in the thesis.
+Notably, the position of each $BH(n,q)$ matrix in our data file containing a list of S-Hadamard $BH(n,q)$ matrices is what we refer to as the index in the thesis.
 
 ### Section 2.2: Full SLA-parametrizations of BH matrices
 
@@ -60,8 +60,8 @@ See this directory for details on reading and using these files to view the para
 
 ## Section 3: Computational methods and results S-Hadamard matrices
 
-This section describes references in "Chapter 3: Computational Methods for Constructing S-Hadamard Matrices" of the thesis.
-Note that we do not include the source code for the optimizer from "Section 3.1: Finding Approximations of S-Hadamard Matrices" as it is relatively straightforward to reproduce.
+This section describes references in _Chapter 3: Computational Methods for Constructing S-Hadamard Matrices_ of the thesis.
+Note that we do not include the source code for the optimizer from _Section 3.1: Finding Approximations of S-Hadamard Matrices_ as it is relatively straightforward to reproduce.
 We only include the relevant approximations found by the optimizer.
 
 ### Section 3.1: Order 12 S-Hadamard approximations
@@ -91,16 +91,16 @@ See the associated [README.md](PSLQ/README.md) for instructions on reading matri
 
 ## Section 4: Identifying Butson Hadamard matrices
 
-In "Chapter 4: Algebraic Construction of a $BH(12,3)$ Matrix" of the thesis, in "Section 4.1: Identifying $BH(12,3)$ Matrices", we do not explicitly reference any code within this repository since the process is relatively straightforward.
+In _Chapter 4: Algebraic Construction of a $BH(12,3)$ Matrix_ of the thesis, in _Section 4.1: Identifying $BH(12,3)$ Matrices_, we do not explicitly reference any code within this repository since the process is relatively straightforward.
 We include the code that we used in this section in [BH-Equivalence](BH-Equivalence/), see this directory for more details.
 
 ## Section 5: Analysis of parametrized matrices
 
-This section describes references in "Chapter 5: Analysis of Parametrized Order 12 S-Hadamard Matrices" of the thesis.
+This section describes references in _Chapter 5: Analysis of Parametrized Order 12 S-Hadamard Matrices_ of the thesis.
 
-Note that we do not provide any code for checking equivalence of complex Hadamard equivalence, i.e., code used for determining $H(a,b,c) \not\sim H(a^{1}, b^{-1}, c^{-1})$ for $a = \zeta_7$, $b = \zeta_5$, and $c= \zeta_{11}$ in Section 5.3.2 of the thesis.
+Note that we do not provide any code for checking equivalence of complex Hadamard matrices, i.e., code used for determining $H(a,b,c) \not\sim H(a^{1}, b^{-1}, c^{-1})$ for $a = \zeta_7$, $b = \zeta_5$, and $c= \zeta_{11}$ in Section 5.3.2 of the thesis.
 This result is relatively straightforward to produce using the C package by Östergård and Valtonen.
-However, there package is not publicly available yet so we are not including any files pertaining to their package or our usage of it.
+However, their package is not publicly available yet so we are not including any files pertaining to their package or our usage of it.
 
 ### Section 5.1: Block-structured representation of matrices
 
@@ -131,11 +131,11 @@ Note that this section is not referred to in the thesis, but we include our calc
 
 ### Section 5.5: Alternate parametrization methods
 
-All code for obtaining parametrization methods and results discussed in Section 5.4 of the thesis is available in the [Alternate-Methods](Alternate-Methods/) directory.
+All code for parametrization methods and results discussed in Section 5.4 of the thesis are available in the [Alternate-Methods](Alternate-Methods/) directory.
 See this directory for more details regarding usage and results.
 We link the relevant source files below for each method discussed in the section.
 
-- The Maple code for checking if a circulant $BH(12,3)$ matrix can be parametrized described in Section 5.4.1 is available in [circulant_matrices.mpl](Alternate-Methods/circulant_matrices.mpl).
+- The Maple code for checking if a circulant $BH(12,3)$ matrix can be parametrized as described in Section 5.4.1 is available in [circulant_matrices.mpl](Alternate-Methods/circulant_matrices.mpl).
 - The Maple code for solving for parameter blocks of an unstructured $BH(12,3)$ matrix described in Section 5.4.2 is available in [solving_parameter_blks.mpl](Alternate-Methods/solving_parameter_blks.mpl).
 - The Maple code for finding SLA-parametrizations that are S-Hadamard for $BH(12,3)$ matrices described in Section 5.4.3 is available in [sla_parametrization.mpl](Alternate-Methods/sla_parametrization.mpl).
 - The implementation of Algorithm 2 given in Section 5.4.4 is contained in [Backtracking-Method](Alternate-Methods/Backtracking-Method/), with usage and examples given in the associated [README.md](Alternate-Methods/Backtracking-Method/README.md).

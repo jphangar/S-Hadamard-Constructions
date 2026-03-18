@@ -1,10 +1,10 @@
 # PSLQ-Based Approach to Parametrizing Matrices
 
-This directory contains the implementation and usage of Algorithm 1 (the subroutine for PSLQ-bases parametrization) described in Section 3.2.1 of the thesis.
+This directory contains the implementation and usage of Algorithm 1 (the subroutine for PSLQ-based parametrization) described in Section 3.2.1 of the thesis.
 Algorithm 1 is implemented in Maple, given in `PSLQ_Param_Subroutine.mpl`.
 Note that the implementation differs from the algorithm description slightly as we prefer to keep the parametrized matrix fully symbolic; we assign labels to roots of unity that appear in the parametrization instead of exact values (which is what the algorithm description does).
 
-We provide an implementation of the naive approach (`PSLQ_Try_Param_Naive.mpl`) and the randomized approach (`PSLQ_Try_Param_Rand.mpl`) for searching for parametrizations used the subroutine.
+We provide an implementation of the naive approach (`PSLQ_Try_Param_Naive.mpl`) and the randomized approach (`PSLQ_Try_Param_Rand.mpl`) for searching for parametrizations using the subroutine.
 We choose to use the randomized approach, more details about the specific inputs given can be seen in `PSLQ_Main.mpl`.
 
 The 79 order 12 S-Hadamard matrices found by our optimizer are given in `order-12-optimizer-solns.m`.

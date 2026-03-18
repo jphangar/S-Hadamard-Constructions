@@ -11,13 +11,14 @@ Additional files can be downloaded from the linked website to try other matrices
 The file `shad.py` is a utility for decoding matrices given in the Aalto repository.
 The backtracking code uses this to read the matrix file and get the desired input matrices.
 
-The output of the backtracking script is either an error message being printed indicating that the parametrization failed (with some indication of the reason), or a parameterized matrix being printed.
+The backtracking script prints either an error message indicating that the parametrization failed (with some indication of the reason), or a parameterized matrix.
 The matrix is printed with `a` denoting the parameter and `w` denoting the root of unity.
 
 The usage of the backtracking script is shown below.
-The arg `n` indicates the order of the matrix, arg `q` indicated the order of the root of unity.
+The arg `n` indicates the order of the matrix, arg `q` indicates the order of the root of unity.
 Arg `all` indicates that all S-Hadamard matrices in the file named `BH-n-q.txt` should be attempted for parametrization.
 Arg `i` indicates a specific index of a matrix in this file that we want to attempt.
+For example, the following output is from trying all $BH(12,3)$ matrices:
 
 ```txt
 Backtracking-Method % python3 backtracking.py -n 12 -q 3 -all
@@ -50,6 +51,8 @@ Backtracking-Method % python3 backtracking.py -n 12 -q 3 -all
 Backtracking-Method % 
 ```
 
+The following output is from trying only the first $BH(12,3)$ matrix (which is $H_1$ which is equivalent to $H_{12}$):
+
 ```txt
 Backtracking-Method % python3 backtracking.py -n 12 -q 3 -i 0
 ['w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0', 'w^0']
@@ -67,6 +70,8 @@ Backtracking-Method % python3 backtracking.py -n 12 -q 3 -i 0
 
 Backtracking-Method %
 ```
+
+The following output is from trying all $BH(9,3)$ matrices:
 
 ```txt
 Backtracking-Method % python3 backtracking.py -n 9 -q 3 -all 

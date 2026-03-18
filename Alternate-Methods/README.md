@@ -75,7 +75,7 @@ Idx 1, variable r[11,10] is an S-Hadamard SLA-parameterization
 
 Index 1 in the Aalto matrices is $H_1$ which is equivalent to $H_{12}$, the chosen basis gives a 3-parameter matrix.
 Index 2 is $H_2$ which is equivalent to $H_{12}^*$, the chosen basis gives only 1-parameter matrices.
-The last matrix shown in normalized $H_{12}$ which (in this run) gave only 1-parameter matrices.
+The last matrix shown is normalized $H_{12}$ which (in this run) gave only 1-parameter matrices.
 
 There is a function in this script called `getNewBasisAndParametrize()` which we can repeatedly call to try to generate a new basis for the kernel and find all S-Hadamard SLA-parametrizations from this new basis.
 By calling this function repeatedly, we observe a run where $H_1$ did not produce a 3-parameter matrix (where index 1 is $H_1$, index 2 is $H_2$, and index 3 is normalized $H_{12}$):

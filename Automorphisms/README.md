@@ -1,6 +1,6 @@
 # Equivalences via Automorphisms
 
-The automorphism group of $H_{12}$ was computed using the BH equivalence algorithm package, `../BH-equivalence/pkg` for more details.
+The automorphism group of $H_{12}$ was computed using the BH equivalence algorithm package; see `../BH-equivalence/pkg` for more details.
 The automorphisms are given in a Maple-readable format in `H12_automorphisms.txt`.
 The file usage is as follows in Maple:
 
@@ -92,7 +92,7 @@ Generator 2,
 >
 ```
 
-The script `coset_matrics.mpl` finds the 96 distinct matrices equivalent to $H(a,b,c)$ corresponding to each coset of the subgroup of automorphisms of $H(a,b,c)$ in $Aut(H_{12})$.
+The script `coset_matrices.mpl` finds the 96 distinct matrices equivalent to $H(a,b,c)$ corresponding to each coset of the subgroup of automorphisms of $H(a,b,c)$ in $Aut(H_{12})$.
 This script also checks that each of these matrices is a block-structured parametrization of $H_{12}$.
 The script prints the following output, which is shown in Table 5.2 in the thesis, that shows that the matrices with the same permutation block as $H(a,b,c)$ can be constructed from $H(a,b,c)$:
 

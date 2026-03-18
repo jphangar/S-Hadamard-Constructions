@@ -1,6 +1,6 @@
 # Square Defect Computations
 
-This directory contains Maple functions for computing the square defect of an S-Hadamard matrix, as well, the values we computed for a select number of non-isolated S-Hadamard BH matrices.
+This directory contains Maple functions for computing the square defect of an S-Hadamard matrix, and the values we computed for a select number of non-isolated S-Hadamard BH matrices.
 In `defect_functions.mpl`, we provide functions `ComputeDefect` and `ComputeDefectSq` that can be used to compute the defect and square defect.
 These functions also return a basis for the kernel of the corresponding linear approximation.
 See `compute_defect.mpl` for more detailed information regarding our usage of these functions to compute defect values.
@@ -148,7 +148,7 @@ Index      Square Defect   Full SLA
 85         4               true 
 ```
 
-The script also prints the defect values for $BH(n,q)$ matrices where $q$ is not an odd prime:
+The script also prints the defect values for $BH(n,q)$ matrices where $q$ is not equal to 3:
 
 ```txt
 Defect Calculations for BH(12, 6) Matrices ...
